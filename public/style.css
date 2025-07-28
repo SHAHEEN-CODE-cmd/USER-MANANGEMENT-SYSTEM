@@ -1,0 +1,158 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #00698f;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+form {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+.table-container {
+  height: 500px;           /* Scrollable height */
+  width: 80%;              /* Centered horizontally */
+  overflow-y: auto;        /* Enable vertical scroll */
+  /* overflow-x: auto;        Optional for horizontal scroll if table is wide */
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  /* table-layout: fixed;     /* Ensures consistent column widths */
+  /* background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+} 
+
+.table-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+ table th {
+  position: sticky;
+  top: 0;
+  background-color: #afaaaa;
+  color:black;
+  height: 60px;
+  font-size:large;
+  font-weight: bold;
+  z-index: 1;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+}
+
+td {
+  color: #666;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+a button {
+  text-decoration: none;
+}
+
+a button:hover {
+  background-color: #3e8e41;
+}
+
+button.del{
+    background-color: rgb(230, 57, 57);
+}
+
+button.del:hover{
+  background-color:red
+}
+
+#add-new-user {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#add-new-user button {
+  background-color: #00698f;
+ align-items: center;
+}
+
+#add-new-user button:hover {
+  background-color: #00567f;
+}
+
+
+
+

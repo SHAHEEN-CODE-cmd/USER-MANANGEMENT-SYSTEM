@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All users</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        table,th,td{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>User Management System</h2>
+
+    <br>
+    <form method="get" action="/user/search">
+        <input type="text" name="username" placeholder="Search by username">
+        <button type="submit">Search</button>
+    </form>
+<div class="table-container">
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+   <% for(user of users){ %>
+        <tr>
+            <td><%= user.id %></td>
+            <td><%= user.email %></td>
+            <td><%= user.username %></td>
+        
+            <td>
+            <form method="get" action="/user/<%= user.id %>/edit">
+                <button>Edit username</button>
+            </form>
+            </td>
+            <td>
+            <form method="get" action="/user/delete">
+
+               <a href="/user/delete"> <button class="del" type="submit">Delete</button></a>
+            </form>
+            </td>
+        </tr>
+   <% } %>
+         
+    </table>
+</div>
+    <br>
+    <div id="add-new-user">
+       <a href="/user/new">
+          <button >Add new user</button>
+       </a>
+    </div>
+</body>
+</html>
