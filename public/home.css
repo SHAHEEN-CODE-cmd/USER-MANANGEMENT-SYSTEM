@@ -4,12 +4,39 @@ body {
   text-align: center;
 }
 
-h2 {
-  font-size: 36px;
+h1 {
+  text-align: center;
+  font-size: 65px;
   font-weight: bold;
   color: #00698f;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #327e99;
   margin-bottom: 20px;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.manage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Optional: centers vertically on the entire page */
+}
+
 
 button {
   background-color: #4CAF50;
